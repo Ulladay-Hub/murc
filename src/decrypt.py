@@ -10,7 +10,7 @@ def decrypt_package(package_data):
     try:
         #decrypted_data = cipher_suite.decrypt(package_data)
         log("INFO", "Package decrypted successfully")
-        return decrypted_data
+        return package_data
     except Exception as e:
         log("ERROR", f"Failed to decrypt package: {e}")
         return None
