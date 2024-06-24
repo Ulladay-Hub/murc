@@ -6,9 +6,9 @@ from utils import log
 
 def decrypt_package(package_data):
     log("INFO", "Decrypting package")
-    cipher_suite = Fernet(SECRET_KEY)
+    #cipher_suite = Fernet(SECRET_KEY)
     try:
-        decrypted_data = cipher_suite.decrypt(package_data)
+        #decrypted_data = cipher_suite.decrypt(package_data)
         log("INFO", "Package decrypted successfully")
         return decrypted_data
     except Exception as e:
