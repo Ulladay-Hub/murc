@@ -1,4 +1,5 @@
 import requests
+import json
 from utils import log, load_config
 
 def fetch_package(package_name, version=None):
